@@ -68,6 +68,9 @@ header{
 .nav-links a:hover {
     color: #2196F3;
 }
+.nav-links a:focus {
+    color: #2196F3;
+}
 a {
     text-decoration: none;
 }
@@ -90,6 +93,9 @@ a {
     margin-left: 50px;
 }
 .contact-links a:hover {
+    color: #2196F3;
+}
+.contact-links a:focus {
     color: #2196F3;
 }
 .contact-links a{
@@ -133,11 +139,14 @@ h1{
     color: #FFFFFF;
 }
 .hero{
-    background-color: #2F303A;
+    background-color: #c4c4c4;
     background: rgba(47, 48, 58, 0.4);
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url('../images/hero.jpg'); 
+    background-image: linear-gradient( to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+     url('../images/hero.jpg'); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -325,6 +334,11 @@ margin-right: 30px;
 .social-icons a:hover .social-icon{
     fill: #FFFFFF;
 }
+.social-icons a:focus{
+    background-color: #2196F3;
+}
+.social-icons a:focus .social-icon{
+    fill: #FFFFFF;
 .portfolio-section{
     padding: 94px 0;
 }
@@ -358,6 +372,10 @@ button:hover{
     color: #FFFFFF;
     background-color: #2196F3;
 }
+button:focus{ 
+    color: #FFFFFF;
+    background-color: #2196F3;
+}
 .product-items{
     display:flex;
     flex-wrap: wrap;
@@ -372,6 +390,9 @@ button:hover{
     margin: 0 30px 30px 0;
 }
 .product-items li:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.product-items li:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .product-items li:nth-child(3n){
@@ -409,7 +430,7 @@ button:hover{
     margin: 0;
 }
 .clients-section{
-    padding: 94px;
+    padding: 94px 0;
 }
 .clients{
     margin-bottom: 50px;
@@ -453,6 +474,12 @@ button:hover{
     border: 1px solid #2196F3; 
 }
 .clients-list a:hover .client-icon{
+    fill: #2196F3;
+}
+.clients-list a:focus{
+    border: 1px solid #2196F3; 
+}
+.clients-list a:focus .client-icon{
     fill: #2196F3;
 }
 footer{
@@ -506,6 +533,9 @@ footer{
     background: rgba(255, 255, 255, 0.1);
 }
 .footer-soc-icons a:hover{
+    background-color: #2196F3;
+}
+.footer-soc-icons a:focus{
     background-color: #2196F3;
 }
 .footer-soc-icon{
